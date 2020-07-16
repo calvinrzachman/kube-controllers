@@ -64,6 +64,9 @@ func init() {
 			},
 		},
 	}
+	DefaultKCC.Status = v3.KubeControllersConfigurationStatus{
+		EnvironmentVars: map[string]string{},
+	}
 }
 
 // RunConfig represents the configuration for all controllers and includes
